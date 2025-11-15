@@ -1,0 +1,17 @@
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.sidebar-li:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #f7f6f6 !important;
+}
+
+.outline-0{
+    outline-width: 0 !important;
+}
+
+.text-sm{
+    font-size: 0.7rem !important;
+}
