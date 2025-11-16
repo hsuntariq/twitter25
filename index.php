@@ -7,6 +7,20 @@
     <?php 
         include './boot.php';
     ?>
+
+    <style>
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(red, orange);
+    }
+
+    body {
+        overflow: hidden;
+    }
+    </style>
 </head>
 
 <body>
@@ -18,7 +32,7 @@
                 <?php include './sidebar.php' ?>
             </div>
             <!-- main feed -->
-            <div class="col-md-6 col-9">
+            <div class="col-md-6 col-9" style="height:97vh;overflow-y:scroll;">
                 <?php 
                 include './main-feed.php';
                 include './single-post.php';

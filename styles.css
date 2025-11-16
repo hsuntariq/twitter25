@@ -15,3 +15,13 @@
 .text-sm{
     font-size: 0.7rem !important;
 }
+
+.transition-lg{
+    transition: all 0.3s;
+}
+.transition-md{
+    transition: all 0.5s;
+}
+.transition-sm{
+    transition: all 0.9s;
+}
