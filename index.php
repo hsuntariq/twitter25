@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +28,22 @@
 </head>
 
 <body>
+
+    <?php 
+        if(!isset($_SESSION['token'])){
+            header("Location: http://localhost:3000/register.php");
+        }
+
+        if(isset($_SESSION['login_success'])){
+            include './toast.php';
+
+            showToast('green','Welcome','You are successfully logged in!');
+            unset($_SESSION['login_success']);
+
+        }
+
+
+    ?>
 
     <div class="container p-3">
         <div class="row">
