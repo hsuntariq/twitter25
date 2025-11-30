@@ -23,6 +23,7 @@
 
     $_SESSION['token'] = $name;
     $_SESSION['email'] = $email;
+    $_SESSION['user_id'] = mysqli_insert_id($connection);
 
     header("Location: http://localhost:3000/");
 

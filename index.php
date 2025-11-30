@@ -42,6 +42,14 @@
 
         }
 
+        if(isset($_SESSION['comment_success'])){
+            include './toast.php';
+            showToast('#FFBF00','Commented',$_SESSION['comment_success']);
+            unset($_SESSION['comment_success']);
+        }
+
+        
+
 
     ?>
 
